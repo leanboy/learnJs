@@ -1,0 +1,16 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", sans-serif;
+    font-weight: bold;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

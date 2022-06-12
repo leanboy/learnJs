@@ -1,0 +1,40 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+div {
+    font-size: 30px;
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+span {
+    color: deepskyblue;
+}
+
+button {
+    background-color: transparent;
+    border: 3px black solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    color: black;
+    font-size: 15px;
+}
+

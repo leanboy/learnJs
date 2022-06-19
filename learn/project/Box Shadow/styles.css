@@ -1,0 +1,84 @@
+:root {
+    --background-color: #FFF;
+    --box-color: #FFD700;
+    --x-positon: 3;
+    --y-positon: 3;
+    --blur: 5;
+    --spread: 6;
+    --shadow-color: #000;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+}
+
+.box-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+.side-bar {
+    min-width: 130px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color: white;
+}
+
+.side-bar label {
+    margin-top: 0.75rem;
+    margin-bottom: 0.15rem;
+    font-family: "Microsoft YaHei", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.divider {
+    margin: 1rem -1rem 0.4rem -1rem;
+    border-bottom: 1px solid #999;
+}
+
+#box {
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    background-color: var(--box-color);
+    box-shadow:
+        calc(var(--x-positon) * 1px)
+        calc(var(--y-positon) * 1px)
+        calc(var(--blur) * 1px)
+        calc(var(--spread) * 1px)
+        var(--shadow-color);
+}
+
+input:not([type='color']) {
+    padding: 0.25rem 0.5rem;
+    font-family: inherit;
+    font-size: inherit;
+    border: 2px solid transparent;
+    border-radius: 0.3rem;
+    outline: none;
+}
+
+input:not([type='color']):focus {
+    border-color: #0AF;
+}
+
+input[type='color'] {
+    width: 100%;
+    border-radius: 0.3rem;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}

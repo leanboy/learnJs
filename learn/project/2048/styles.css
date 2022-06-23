@@ -6,11 +6,17 @@
 body {
     background-color: #333;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     height: 100vh;
     margin: 0;
     font-size: 7.5vmin;
+}
+
+#score {
+    color: #CCC;
+    font-size: 9vmin;
 }
 
 #game-board {
@@ -37,7 +43,7 @@ body {
     --x: 2;
     --y: 3;
     --background-lightness: 80%;
-    --text-lightness: 20%;
+    --text-lightness: 10%;
     position: absolute;
     display: flex;
     justify-content: center;
